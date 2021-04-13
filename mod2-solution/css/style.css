@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 175%;
+}
+
+section > div{
+    border: 1px solid black;
+    background-color: grey;
+    width: 90%;
+    height: 35%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+    color: white;
+    overflow: auto;
+}
+
+p{
+    padding: 10px;
+    font-size: 125%;
+    clear: right;
+}
+
+h2{ 
+    width: 40%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: auto;
+    float: right;
+    font-size: 175%;
+    margin-bottom: 1%;
+}
+
+.title1{
+    background-color: rgb(101, 133, 202);
+}
+
+.title2{
+    background-color: brown;
+}
+
+.title3{
+    background-color: chocolate;
+}
+
+@media (min-width: 992px){
+    .sect1, .sect2, .sect3{
+        float: left;
+    }
+    .sect1{
+        width: 33.33%;
+    }
+    .sect2{
+        width: 33.33%;
+    }
+    .sect3{
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .sect1, .sect2, .sect3{
+        float: left;
+    }
+    .sect1{
+        width: 50%;
+    }
+    .sect2{
+        width: 50%;
+    }
+    .sect3{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    .sect1, .sect2, .sect3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sect1{
+        width: 100%;
+    }
+    .sect2{
+        width: 100%;
+    }
+    .sect3{
+        width: 100%;
+    }
+}
